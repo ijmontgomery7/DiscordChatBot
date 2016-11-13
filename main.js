@@ -36,12 +36,15 @@ bot.on("message", function (message) {
                 }
                 x++;
             }
-            
+
 
             dictionary[first] = second;
         }
     }
-    if(parsedLine[0] != ":set") {
+    if(message == ":clear"){
+        dictionary = {};
+    }
+    else {
         for (var key in dictionary) {
             var value = dictionary[key];
             if (message.content == key) {
@@ -50,9 +53,7 @@ bot.on("message", function (message) {
         }
     }
 
-    if(message == ":clear"){
-        dictionary = {};
-    }
+
 });
 
 

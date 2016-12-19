@@ -61,4 +61,4 @@ bot.on("message", function (message) {
 
 
 // Discord.js' way to log the bot on
-bot.login("MjQ2MTQ1MDc3NzQ1OTQyNTMw.CwWX_w.OxCsOdREUf0V9YfPqEOVfLC4QnQ");
+bot.login("Unique login token is entered here");
